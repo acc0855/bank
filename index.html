@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    button {
+      width: 150px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: rgb(29, 19, 100);
+      color: aliceblue;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #271772;
+      transform: scale(1.05);
+    }
+
+    .text {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      color: red;
+    }
+
+    .tex {
+      position: absolute;
+      top: 10%;
+      left: 87%;
+      color: red;
+    }
+
+    .t {
+      position: absolute;
+      top: 15%;
+      left: 8%;
+      color: red;
+    }
+
+    .t1 {
+      position: absolute;
+      top: 15%;
+      left: 87%;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="buttons">
+      <button id="btn1">Add Cash</button>
+      <button id="btn2">Remove Cash</button>
+      <button id="btn3">Look Cash</button>
+      <button id="btn4">Owner</button>
+    </div>
+  </div>
+  <div class="text">
+    <h2 id="p1">00</h2>
+  </div>
+  <div class="tex">
+    <h2 id="p2">00</h2>
+  </div>
+  <div class="t">
+    <h2>total cash</h2>
+  </div>
+  <div class="t1">
+    <h2>owner</h2>
+  </div>
+
+  <script>
+    let bb = 0;
+
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.getElementById("btn2");
+    const btn3 = document.getElementById("btn3");
+    const btn4 = document.getElementById("btn4");
+
+    btn1.addEventListener("click", () => {
+      let addCash = prompt("Add cash");
+      let cashToAdd = parseInt(addCash);
+      if (!isNaN(cashToAdd)) {
+        bb += cashToAdd;
+      }
+    });
+
+    btn2.addEventListener("click", () => {
+      let removeCash = prompt("Remove cash");
+      let cashToRemove = parseInt(removeCash);
+      if (!isNaN(cashToRemove)) {
+        bb -= cashToRemove;
+      }
+    });
+
+    btn3.addEventListener("click", () => {
+      let p = document.getElementById("p1");
+      p.innerHTML = bb;
+    });
+
+    btn4.addEventListener("click", () => {
+      let owner = "NOOB CODER";
+      localStorage.setItem("owner", owner);
+      let g = localStorage.getItem("owner");
+      let pp = document.getElementById("p2");
+      pp.innerHTML = g;
+    });
+  </script>
+</body>
+
+</html>
