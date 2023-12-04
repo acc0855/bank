@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stylish Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+  body {
+      font-family: 'Courier New', Courier, monospace;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      background-color: #000;
+      color: lime;
     }
 
     .container {
@@ -25,15 +26,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
     }
 
     button {
       width: 150px;
       height: 60px;
       border-radius: 30px;
-      background-color: rgb(29, 19, 100);
-      color: aliceblue;
+      background-color: #333;
+      color: lime;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       font-size: 16px;
       border: none;
@@ -42,87 +43,183 @@
     }
 
     button:hover {
-      background-color: #271772;
+      background-color: #555;
       transform: scale(1.05);
     }
 
     .text {
       position: absolute;
-      top: 10%;
+      top: 15%;
       left: 10%;
-      color: red;
+      color: lime;
+      font-family: 'Hack', monospace;
     }
 
     .tex {
       position: absolute;
-      top: 10%;
+      top: 15%;
       left: 87%;
-      color: red;
+      color: lime;
+      font-family: 'Hack', monospace;
     }
 
     .t {
       position: absolute;
-      top: 15%;
+      top: 20%;
       left: 8%;
-      color: red;
+      color: lime;
+      font-family: 'Hack', monospace;
     }
 
     .t1 {
       position: absolute;
-      top: 15%;
+      top: 20%;
       left: 87%;
-      color: red;
+      color: lime;
+      font-family: 'Hack', monospace;
     }
+
     .had {
       position: absolute;
-      top: 5%;
+      top: 10%;
       left: 43%;
-      color: rgb(0, 0, 0);
-      box-shadow: 1;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5);
     }
+
     .design {
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 10%;
-      color: rgb(0, 0, 0);
-      box-shadow: 1;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5);
+      animation: glitch 2s infinite alternate;
     }
+
     .design2 {
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 80%;
-      color: rgb(0, 0, 0);
-      box-shadow: 1;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5);
+      animation: glitch 2s infinite alternate-reverse;
     }
+
     .design3 {
       position: absolute;
-      top: 5%;
-      left: 60%;
-      color: rgb(0, 0, 0);
-      box-shadow: 1;
+      top: 10%;
+      left: 63%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5);
+      animation: blink 1s infinite alternate;
     }
+
     .design4 {
       position: absolute;
-      top: 5%;
-      left: 37%;
-      color: rgb(0, 0, 0);
-      box-shadow: 1;
+      top: 10%;
+      left: 35%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5);
+      animation: blink 1s infinite alternate;
     }
+
+    @keyframes glitch {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25%, 75% {
+        transform: translateX(5px);
+      }
+      50% {
+        transform: translateX(-5px);
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .mnd {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(232, 6, 6);
+  width: 100%;
+  height: 1%;
+  position: fixed;
+  top: 0; /* Change 'bottom' to 'top' */
+}
+
     .mndi {
     text-align: center;
     padding: 20px;
-    background-color: rgb(47, 40, 40);
+    background-color: rgb(232, 6, 6);
     width: 100%;
-    height: 3%;
+    height: 1%;
     position: fixed;
     bottom: 0%;
 }
+.titu1 {
+      position: absolute;
+      top: 30%;
+      left: 46%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      
+    }
+    .titu2 {
+      position: absolute;
+      top: 40%;
+      left: 46%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      
+    }
+    .titu3 {
+      position: absolute;
+      top: 50%;
+      left: 46%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      
+    }
+    .titu4 {
+      position: absolute;
+      top: 60%
+      ;
+      left: 46%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      
+    }
+    .titu {
+      position: absolute;
+      top: 80%;
+      left: 47%;
+      width: 7%;
+      height: 5%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      
+    }
   </style>
 </head>
 
 <body>
+  
   <div class="mndi">
-    <p id="p" style="color: rgb(255, 0, 0);">National Bank |||| Copyright © 2023 Bank.com</p>
+    
+  </div>
+  <div class="mnd">
+  
   </div>
   <div class="design">
     <img src="green-2084561_1280.png" alt="SERVER FAIL" height="100">
@@ -142,18 +239,19 @@
   </div>
   <div class="container">
     <div class="buttons">
-      <button id="btn1">Add Cash</button>
-      <button id="btn2">Remove Cash</button>
-      <button id="btn3">Look Cash</button>
-      <button id="btn4">Owner</button>
+      <button class = "titu1" id="btn1">Add Cash</button>
+      <button class = "titu2" id="btn2">Remove Cash</button>
+      <button class = "titu3" id="btn3">Look Cash</button>
+      <button class = "titu4" id="btn4">Owner</button>
+      <button class = "titu" id = "btn5">SET Name</button>
     </div>
   </div>
   <div class="text">
-    <h2 id="p1">00</h2>
+    <h2 id="p1"></h2>
     
   </div>
   <div class="tex">
-    <h2 id="p2">00</h2>
+    <h2 id="p2"></h2>
   </div>
   <div class="t">
     <h2>TOTAL CASH</h2>
@@ -166,11 +264,20 @@
 
   <script>
     let bb = 0;
-
+    let owner = " ";
     const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
     const btn3 = document.getElementById("btn3");
     const btn4 = document.getElementById("btn4");
+    const btn5 = document.getElementById("btn5");
+
+    btn5.addEventListener("click", () => {
+       let hh  = prompt("enter Name");
+       owner = hh ;
+
+
+    });
+
 
     btn1.addEventListener("click", () => {
       let addCash = prompt("Add cash");
@@ -194,14 +301,14 @@
     });
 
     btn4.addEventListener("click", () => {
-      let owner = "NOOB CODER";
-      localStorage.setItem("owner", owner);
-      let g = localStorage.getItem("owner");
-      let pp = document.getElementById("p2");
-      pp.innerHTML = g;
+
+      p2.innerHTML = owner;
     });
   </script>
 </body>
 
 </html>
+
+
+
 
