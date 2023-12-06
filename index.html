@@ -265,6 +265,7 @@
   <script>
     let bb = 0;
     let owner = " ";
+    let count = 0;
     const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
     const btn3 = document.getElementById("btn3");
@@ -296,8 +297,15 @@
     });
 
     btn3.addEventListener("click", () => {
-      let p = document.getElementById("p1");
+    count++; 
+    let p = document.getElementById("p1");
+    if (count == 2){
+     
       p.innerHTML = bb;
+    }
+    else {
+      p.innerHTML = "******";
+    }
     });
 
     btn4.addEventListener("click", () => {
@@ -308,6 +316,7 @@
 </body>
 
 </html>
+
 
 
 
