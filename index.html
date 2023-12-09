@@ -235,6 +235,7 @@
       font-family: 'Hack', monospace;
       box-shadow: 1px 1px 10px rgba(102, 255, 14, 0.959);
       animation: blink 0.2s infinite alternate;
+   
      
     }
 
@@ -279,55 +280,34 @@
     box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
   }
 }
-/* .design6{
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-  color: #fff;
-  background-color: #333;
-  border-radius: 10px;
-  opacity: 0;
-  animation: glowAnimation1 1s ease-in-out infinite alternate;
+/* styles.css */
+
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
 }
-.design6 {
-      font-size: 36px;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-      color: #fff;
-      background-color: #333;
-      border-radius: 10px;
-      opacity: 0;
-      animation: glowAnimation1 1s ease-in-out infinite alternate;
+.titu5 {
+      position: absolute;
+      width: 2%;
+      height: 2%;
+      top: 89%;
+      left: 0.1%;
+      color: lime;
+      background-color: rgba(255, 255, 0, 0.336);
+      font-family: 'Hack', monospace;
+      animation: glowAnimat 0.1s ease-in-out infinite alternate;
     }
-
-    .design6.animate {
-      opacity: 1;
-    }
-
-    @keyframes glowAnimation1 {
-      0% {
-        box-shadow: 0 0 10px #fff, 0 0 0px #fff, 0 0 0px #fff;
-      }
-      100% {
-        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #fff;
-      }
-    } */
-
-/* .titu5  {
-    background-color: rgb(255, 200, 0);
-    position: absolute;
-    width: 1%;
-    height: 2%;
-    top: 90%;
-    left: 0.1%;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-} */
   </style>
+  
+  
 </head>
 
 <body>
@@ -368,7 +348,7 @@
       <button class="titu3" id="btn3">Look Cash</button>
       <button class="titu4" id="btn4">Owner</button>
       <button class="titu" id="btn5">SET Name</button>
- 
+      <button class="titu5" id="btn6"></button>
     </div>
   </div>
   <div class="text">
@@ -452,7 +432,35 @@
       p2.innerHTML = owner;
     });
   </script>
- 
+ <script>
+  const colorButton = document.getElementById('btn6');
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  let colorChange = true;
+
+colorButton.addEventListener('click', () => {
+  const interval = setInterval(() => {
+    if (colorChange) {
+      document.body.style.backgroundColor = "red";
+    } else {
+      document.body.style.backgroundColor = "blue";
+    }
+    colorChange = !colorChange;
+    
+    setTimeout(() => {
+      clearInterval(interval); // Stops the interval after 5 seconds
+    }, 500000); // Stops the interval after 5 seconds
+  }, 200); // Change color every 1 second
+});
+
+</script>
 </body>
 
 </html>
