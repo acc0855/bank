@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stylish Page</title>
   <style>
-  body {
+    body {
       font-family: 'Courier New', Courier, monospace;
       margin: 0;
       padding: 0;
@@ -51,7 +50,7 @@
       position: absolute;
       top: 15%;
       left: 10%;
-      color: lime;
+      color: rgb(238, 11, 11);
       font-family: 'Hack', monospace;
     }
 
@@ -59,7 +58,7 @@
       position: absolute;
       top: 15%;
       left: 87%;
-      color: lime;
+      color: rgb(255, 5, 5);
       font-family: 'Hack', monospace;
     }
 
@@ -148,58 +147,63 @@
         opacity: 0;
       }
     }
+
     .mnd {
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(232, 6, 6);
-  width: 100%;
-  height: 1%;
-  position: fixed;
-  top: 0; /* Change 'bottom' to 'top' */
-}
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(232, 6, 6);
+      width: 100%;
+      height: 1%;
+      position: fixed;
+      top: 0; /* Change 'bottom' to 'top' */
+    }
 
     .mndi {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(232, 6, 6);
-    width: 100%;
-    height: 1%;
-    position: fixed;
-    bottom: 0%;
-}
-.titu1 {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(232, 6, 6);
+      width: 100%;
+      height: 1%;
+      position: fixed;
+      bottom: 0%;
+    }
+
+    .titu1 {
       position: absolute;
       top: 30%;
       left: 46%;
       color: lime;
       font-family: 'Hack', monospace;
-      
+      animation: glowAnimation 1s ease-in-out infinite alternate;
     }
+
     .titu2 {
       position: absolute;
       top: 40%;
       left: 46%;
       color: lime;
       font-family: 'Hack', monospace;
-      
+      animation: glowAnimatio 1s ease-in-out infinite alternate;
     }
+
     .titu3 {
       position: absolute;
       top: 50%;
       left: 46%;
       color: lime;
       font-family: 'Hack', monospace;
-      
+      animation: glowAnimati 1s ease-in-out infinite alternate;
     }
+
     .titu4 {
       position: absolute;
-      top: 60%
-      ;
+      top: 60%;
       left: 46%;
       color: lime;
       font-family: 'Hack', monospace;
-      
+      animation: glowAnimat 1s ease-in-out infinite alternate;
     }
+
     .titu {
       position: absolute;
       top: 80%;
@@ -208,18 +212,135 @@
       height: 5%;
       color: lime;
       font-family: 'Hack', monospace;
-      
+      animation: glowAnima 1s ease-in-out infinite alternate;
     }
+
+    body.blinking {
+      animation: blinkScreen 1s infinite;
+    }
+
+    @keyframes blinkScreen {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .design5 {
+      position: absolute;
+      top: 10%;
+      left: 1%;
+      color: lime;
+      font-family: 'Hack', monospace;
+      box-shadow: 1px 1px 10px rgba(102, 255, 14, 0.959);
+      animation: blink 0.2s infinite alternate;
+     
+    }
+
+
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
+  }
+}
+@keyframes glowAnimatio {
+  0% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
+  }
+}
+@keyframes glowAnimati {
+  0% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
+  }
+}
+@keyframes glowAnimat {
+  0% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
+  }
+}
+@keyframes glowAnima {
+  0% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff;
+  }
+}
+/* .design6{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10px;
+  opacity: 0;
+  animation: glowAnimation1 1s ease-in-out infinite alternate;
+}
+.design6 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      background-color: #333;
+      border-radius: 10px;
+      opacity: 0;
+      animation: glowAnimation1 1s ease-in-out infinite alternate;
+    }
+
+    .design6.animate {
+      opacity: 1;
+    }
+
+    @keyframes glowAnimation1 {
+      0% {
+        box-shadow: 0 0 10px #fff, 0 0 0px #fff, 0 0 0px #fff;
+      }
+      100% {
+        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #fff;
+      }
+    } */
+
+/* .titu5  {
+    background-color: rgb(255, 200, 0);
+    position: absolute;
+    width: 1%;
+    height: 2%;
+    top: 90%;
+    left: 0.1%;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
   </style>
 </head>
 
 <body>
+  <div class="design6">
+    <h2 id="p11"></h2>
+
+  </div>
   
   <div class="mndi">
-    
+
   </div>
   <div class="mnd">
-  
+
   </div>
   <div class="design">
     <img src="green-2084561_1280.png" alt="SERVER FAIL" height="100">
@@ -233,22 +354,26 @@
   <div class="design4">
     <img src="money-5273328_1280.png" alt="SERVER FAIL" height="100">
   </div>
+  <div class="design5">
+    <img src="Screenshot 2023-12-09 224105.png" alt="SERVER FAIL" height="50">
+  </div>
   <div class="had">
     <h1>CurrentAccount</h1>
     <hr>
   </div>
   <div class="container">
     <div class="buttons">
-      <button class = "titu1" id="btn1">Add Cash</button>
-      <button class = "titu2" id="btn2">Remove Cash</button>
-      <button class = "titu3" id="btn3">Look Cash</button>
-      <button class = "titu4" id="btn4">Owner</button>
-      <button class = "titu" id = "btn5">SET Name</button>
+      <button class="titu1" id="btn1">Add Cash</button>
+      <button class="titu2" id="btn2">Remove Cash</button>
+      <button class="titu3" id="btn3">Look Cash</button>
+      <button class="titu4" id="btn4">Owner</button>
+      <button class="titu" id="btn5">SET Name</button>
+ 
     </div>
   </div>
   <div class="text">
     <h2 id="p1"></h2>
-    
+
   </div>
   <div class="tex">
     <h2 id="p2"></h2>
@@ -262,6 +387,12 @@
     <hr>
   </div>
 
+  <!-- <script>
+    function animateFirecracker() {
+      const firecracker = document.getElementById('p11');
+      firecracker.classList.add('animate');
+    }
+  </script> -->
   <script>
     let bb = 0;
     let owner = " ";
@@ -273,12 +404,9 @@
     const btn5 = document.getElementById("btn5");
 
     btn5.addEventListener("click", () => {
-       let hh  = prompt("enter Name");
-       owner = hh ;
-
-
+      let hh = prompt("enter Name");
+      owner = hh;
     });
-
 
     btn1.addEventListener("click", () => {
       let addCash = prompt("Add cash");
@@ -287,10 +415,9 @@
         bb += cashToAdd;
       }
       let p = document.getElementById("p1");
-      if (count % 2 ==  0){
+      if (count % 2 == 0) {
         p.innerHTML = bb;
-      }
-      else{
+      } else {
         p.innerHTML = "******";
       }
     });
@@ -302,41 +429,30 @@
         bb -= cashToRemove;
       }
       let p = document.getElementById("p1");
-      
-      if (count % 2 == 0){
+
+      if (count % 2 == 0) {
         p.innerHTML = bb;
-      }
-      else{
+      } else {
         p.innerHTML = "******";
       }
     });
 
     btn3.addEventListener("click", () => {
-    count++; 
-    let p = document.getElementById("p1");
-    
-   
+      count++;
+      let p = document.getElementById("p1");
+
       p.innerHTML = "******";
-      
-    
-    if (count % 2 == 0){
-       
-      p.innerHTML = bb;
-    }
+
+      if (count % 2 == 0) {
+        p.innerHTML = bb;
+      }
     });
 
     btn4.addEventListener("click", () => {
-
       p2.innerHTML = owner;
     });
   </script>
+ 
 </body>
 
 </html>
-
-
-
-
-
-
-
