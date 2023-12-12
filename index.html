@@ -239,6 +239,7 @@
    
      
     }
+    
 
 
 @keyframes glowAnimation {
@@ -299,12 +300,49 @@
       position: absolute;
       width: 2%;
       height: 2%;
-      top: 89%;
+      top: 97%;
       left: 0.1%;
-      color: lime;
-      background-color: rgba(255, 255, 0, 0.336);
+      color: rgb(0, 0, 0);
+      background-color: rgb(0, 0, 0);
       font-family: 'Hack', monospace;
-      animation: glowAnimat 0.1s ease-in-out infinite alternate;
+      /* animation: glowAnimat 0.1s ease-in-out infinite alternate; */
+      animation: glitc 2s infinite alternate-reverse;
+    }
+    @keyframes glitc {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      100%, 100% {
+        transform: translateX(1420px);
+      }
+      200% {
+        transform: translateX(-100px);
+      }
+    }
+
+    /* /////////////////////////////// */
+    .titu6 {
+      position: absolute;
+      width: 2%;
+      height: 2%;
+      top: 3%;
+      left: 0.1%;
+      color: rgb(0, 0, 0);
+      background-color: rgb(0, 0, 0);
+      font-family: 'Hack', monospace;
+      /* animation: glowAnimat 0.1s ease-in-out infinite alternate; */
+      animation: glit 2s infinite alternate-reverse;
+    }
+    @keyframes glit {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      100%, 100% {
+        transform: translateX(1420px);
+      }
+      200% {
+        transform: translateX(-100px);
+      }
     }
   </style>
   
@@ -353,6 +391,7 @@
       <button class="titu4" id="btn4">Owner</button>
       <button class="titu" id="btn5">SET Name</button>
       <button class="titu5" id="btn6"></button>
+      <button class="titu6" id="btn7"></button>
     </div>
   </div>
   <div class="text">
