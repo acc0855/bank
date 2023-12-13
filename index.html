@@ -344,6 +344,22 @@
         transform: translateX(-100px);
       }
     }
+    /* ///////////////////////// */
+    .hr1 {
+      position: absolute;
+      top: 26%;
+      left: 8%;
+      width: 9%;
+    }
+    .hr2 {
+      position: absolute;
+      top: 26%;
+      left: 86.8%;
+      width: 5%;
+    }
+
+    /* /////////////////////// */
+  
   </style>
   
   
@@ -392,6 +408,7 @@
       <button class="titu" id="btn5">SET Name</button>
       <button class="titu5" id="btn6"></button>
       <button class="titu6" id="btn7"></button>
+     
     </div>
   </div>
   <div class="text">
@@ -403,10 +420,16 @@
   </div>
   <div class="t">
     <h2>TOTAL CASH</h2>
+    
+  </div>
+  <div class = "hr1">
     <hr>
   </div>
   <div class="t1">
     <h2>OWNER</h2>
+    
+  </div>
+  <div class ="hr2">
     <hr>
   </div>
 
@@ -439,7 +462,7 @@
       }
       let p = document.getElementById("p1");
       if (count % 2 == 0) {
-        p.innerHTML = bb;
+        p.innerHTML = bb+ " €" ;
       } else {
         p.innerHTML = "******";
       }
@@ -454,7 +477,7 @@
       let p = document.getElementById("p1");
 
       if (count % 2 == 0) {
-        p.innerHTML = bb;
+        p.innerHTML = bb+ " €";
       } else {
         p.innerHTML = "******";
       }
@@ -467,8 +490,9 @@
       p.innerHTML = "******";
 
       if (count % 2 == 0) {
-        p.innerHTML = bb;
+        p.innerHTML = bb + " €";
       }
+     
     });
 
     btn4.addEventListener("click", () => {
@@ -508,3 +532,4 @@ colorButton.addEventListener('click', () => {
 </body>
 
 </html>
+
